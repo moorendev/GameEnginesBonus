@@ -1,7 +1,7 @@
 # GameEnginesBonus
 Bonus marks to make up for midterm in Game Engine Design
 
-
+////////
 
 Student Number: 100785826
 
@@ -9,10 +9,20 @@ Student Number: 100785826
 
 37 is PRIME
 
-
+////////
 
 Designated game is Donkey Kong
 
 Designated singleton pattern use: Powerup manager
 
 Designated command pattern use: Powerup that undoes one of DK's actions
+
+////////
+
+INSTRUCTIONS:
+
+Left and right arrow keys: MOVE
+
+Space bar: JUMP
+
+////////
