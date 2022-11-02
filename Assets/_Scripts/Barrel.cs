@@ -7,6 +7,7 @@ public class Barrel : MonoBehaviour
 {
     public Transform spawnpoint;
     public Vector3 spawnspeed;
+    public PowerUpManager powerManager;
     private void OnEnable()
     {
         transform.GetComponent<Rigidbody>().WakeUp();
@@ -23,7 +24,14 @@ public class Barrel : MonoBehaviour
 
         if (other.collider.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if (powerManager.GetPoweredUp())
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
         else if (other.collider.tag == "Respawn")
         {
